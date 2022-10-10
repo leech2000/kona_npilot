@@ -90,7 +90,7 @@ class CarInterface(CarInterfaceBase):
       except:
         torque_tune(ret.lateralTuning, 2.5, 0.01)
 
-    ret.steerRatio = 16.5
+    ret.steerRatio = 14.15
     ret.steerActuatorDelay = 0.2
     ret.steerLimitTimer = 2.5
 
@@ -199,7 +199,7 @@ class CarInterface(CarInterfaceBase):
       ret.mass = 1427. + STD_CARGO_KG
       ret.wheelbase = 2.6
       ret.steerRatio = 13.27
-      tire_stiffness_factor = 0.7
+      tire_stiffness_factor = 0.65
       ret.centerToFront = ret.wheelbase * 0.4
       if ret.lateralTuning.which() == 'torque':
         torque_tune(ret.lateralTuning, 4.398306735170212, 0.08651833437845884)
