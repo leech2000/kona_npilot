@@ -202,7 +202,7 @@ class CarInterface(CarInterfaceBase):
       tire_stiffness_factor = 0.65
       ret.centerToFront = ret.wheelbase * 0.4
       if ret.lateralTuning.which() == 'torque':
-        torque_tune(ret.lateralTuning, 4.398306735170212, 0.08651833437845884)
+        torque_tune(ret.lateralTuning, 3.078814714619148, 0.08651833437845884)
 
     elif candidate in [CAR.IONIQ, CAR.IONIQ_EV_LTD, CAR.IONIQ_EV_2020, CAR.IONIQ_PHEV]:
       ret.mass = 1490. + STD_CARGO_KG
