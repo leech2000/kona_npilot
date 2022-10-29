@@ -18,7 +18,7 @@ class CarControllerParams:
 
     if CP.carFingerprint in [CAR.KONA_HEV, CAR.KONA_EV]:
       self.STEER_DELTA_DOWN = 7
-      self.STEER_MAX = 270
+      self.STEER_MAX = 380
     else:
       self.STEER_DELTA_DOWN = 6
 
